@@ -1,0 +1,9 @@
+services:
+  pynonymizer:
+    network_mode: host
+    image: pynonymizer
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file:
+      - .env.local

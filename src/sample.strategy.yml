@@ -1,0 +1,10 @@
+scripts:
+  before:
+    - SELECT @@VERSION AS 'SQL Server Version';  
+
+tables:
+  Users:
+    columns:
+      email:
+        type: fake_update
+        fake_type: company_email
